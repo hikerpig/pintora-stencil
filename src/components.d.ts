@@ -8,17 +8,11 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface PintoraPreview {
         /**
-          * The first name
+          * pintora api
          */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "pintora": any;
+        "refresh": () => Promise<void>;
+        "showSource": boolean;
     }
 }
 declare global {
@@ -35,17 +29,10 @@ declare global {
 declare namespace LocalJSX {
     interface PintoraPreview {
         /**
-          * The first name
+          * pintora api
          */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "pintora"?: any;
+        "showSource"?: boolean;
     }
     interface IntrinsicElements {
         "pintora-preview": PintoraPreview;

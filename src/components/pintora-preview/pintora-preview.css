@@ -1,3 +1,15 @@
 :host {
   display: block;
 }
+
+pintora-preview {
+  white-space: pre;
+}
+
+.pintora-preview__content {
+  display: flex;
+}
+
+/* .pintora-preview__source {
+  display: none;
+} */
