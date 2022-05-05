@@ -19,8 +19,8 @@ Stencil components are just Web Components, so they work in any major framework 
 To start building a new web component using Stencil, clone this repo to a new directory:
 
 ```bash
-git clone https://github.com/ionic-team/stencil-component-starter.git my-component
-cd my-component
+git clone https://github.com/ionic-team/stencil-component-starter.git pintora-preview
+cd pintora-preview
 git remote rm origin
 ```
 
@@ -61,15 +61,15 @@ The first step for all three of these strategies is to [publish to NPM](https://
 
 ### Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/my-component@0.0.1/dist/my-component.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/pintora-preview@0.0.1/dist/pintora-preview.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
-- Run `npm install my-component --save`
-- Put a script tag similar to this `<script type='module' src='node_modules/my-component/dist/my-component.esm.js'></script>` in the head of your index.html
+- Run `npm install pintora-preview --save`
+- Put a script tag similar to this `<script type='module' src='node_modules/pintora-preview/dist/pintora-preview.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In a stencil-starter app
-- Run `npm install my-component --save`
-- Add an import to the npm packages `import my-component;`
+- Run `npm install pintora-preview --save`
+- Add an import to the npm packages `import pintora-preview;`
 - Then you can use the element anywhere in your template, JSX, html etc

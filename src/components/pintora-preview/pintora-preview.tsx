@@ -2,11 +2,11 @@ import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
 @Component({
-  tag: 'my-component',
-  styleUrl: 'my-component.css',
+  tag: 'pintora-preview',
+  styleUrl: 'pintora-preview.css',
   shadow: true,
 })
-export class MyComponent {
+export class PintoraPreview {
   /**
    * The first name
    */

@@ -6,7 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface PintoraPreview {
         /**
           * The first name
          */
@@ -22,18 +22,18 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLPintoraPreviewElement extends Components.PintoraPreview, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLPintoraPreviewElement: {
+        prototype: HTMLPintoraPreviewElement;
+        new (): HTMLPintoraPreviewElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "pintora-preview": HTMLPintoraPreviewElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface PintoraPreview {
         /**
           * The first name
          */
@@ -48,14 +48,14 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "pintora-preview": PintoraPreview;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "pintora-preview": LocalJSX.PintoraPreview & JSXBase.HTMLAttributes<HTMLPintoraPreviewElement>;
         }
     }
 }

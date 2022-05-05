@@ -1,36 +1,36 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { MyComponent } from './my-component';
+import { PintoraPreview } from './pintora-preview';
 
-describe('my-component', () => {
+describe('pintora-preview', () => {
   it('renders', async () => {
     const { root } = await newSpecPage({
-      components: [MyComponent],
-      html: '<my-component></my-component>',
+      components: [PintoraPreview],
+      html: '<pintora-preview></pintora-preview>',
     });
     expect(root).toEqualHtml(`
-      <my-component>
+      <pintora-preview>
         <mock:shadow-root>
           <div>
             Hello, World! I'm
           </div>
         </mock:shadow-root>
-      </my-component>
+      </pintora-preview>
     `);
   });
 
   it('renders with values', async () => {
     const { root } = await newSpecPage({
-      components: [MyComponent],
-      html: `<my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>`,
+      components: [PintoraPreview],
+      html: `<pintora-preview first="Stencil" last="'Don't call me a framework' JS"></pintora-preview>`,
     });
     expect(root).toEqualHtml(`
-      <my-component first="Stencil" last="'Don't call me a framework' JS">
+      <pintora-preview first="Stencil" last="'Don't call me a framework' JS">
         <mock:shadow-root>
           <div>
             Hello, World! I'm Stencil 'Don't call me a framework' JS
           </div>
         </mock:shadow-root>
-      </my-component>
+      </pintora-preview>
     `);
   });
 });
