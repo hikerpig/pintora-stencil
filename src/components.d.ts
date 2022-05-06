@@ -5,12 +5,13 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { PintoraAPIType } from "./components/pintora-preview/pintora-preview";
 export namespace Components {
     interface PintoraPreview {
         /**
-          * pintora api
+          * pintora api object, otherwise `globalThis.pintora` will be used
          */
-        "pintora": any;
+        "pintora": PintoraAPIType;
         /**
           * Update source and refresh preview
          */
@@ -32,9 +33,9 @@ declare global {
 declare namespace LocalJSX {
     interface PintoraPreview {
         /**
-          * pintora api
+          * pintora api object, otherwise `globalThis.pintora` will be used
          */
-        "pintora"?: any;
+        "pintora"?: PintoraAPIType;
         "showSource"?: boolean;
     }
     interface IntrinsicElements {

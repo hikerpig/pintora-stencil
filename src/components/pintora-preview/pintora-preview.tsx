@@ -1,5 +1,13 @@
 import { Component, Prop, h, Method, Element, State, Watch } from '@stencil/core';
 
+/**
+ * @pintora/stadalone type
+ */
+export type PintoraAPIType = any;
+
+/**
+ * @slot default - Default slot, put pintora DSL code in it and you will see preview
+ */
 @Component({
   tag: 'pintora-preview',
   styleUrl: 'pintora-preview.css',
@@ -9,21 +17,15 @@ export class PintoraPreview {
   @Element() el: HTMLElement;
 
   @Prop() showSource: boolean;
+  /**
+   * pintora api object, otherwise `globalThis.pintora` will be used
+   */
+  @Prop() pintora: PintoraAPIType;
 
   @State() source: string;
 
   resultElement!: HTMLDivElement;
   sourceElement!: HTMLDivElement;
-
-  /**
-   * pintora api
-   */
-  @Prop() pintora: any;
-
-  @Watch('source')
-  onSourceChange() {
-    this.updatePreview();
-  }
 
   /**
    * Update source and refresh preview
@@ -44,6 +46,11 @@ export class PintoraPreview {
     }
   }
 
+  @Watch('source')
+  onSourceChange() {
+    this.updatePreview();
+  }
+
   getSourceByElement() {
     const sourceElement = this.sourceElement || this.el.querySelector('.pintora-preview__source');
     if (sourceElement) {
@@ -52,8 +59,8 @@ export class PintoraPreview {
   }
 
   updatePreview() {
-    let pintora = this.pintora || globalThis.pintora;
-    if (pintora && pintora.default) pintora = pintora.default;
+    let pintora: PintoraAPIType = this.pintora || globalThis.pintora;
+    if (pintora && (pintora as any).default) pintora = (pintora as any).default;
 
     // console.log('pintora is', pintora)
     if (pintora && this.resultElement) {
