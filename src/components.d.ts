@@ -11,6 +11,9 @@ export namespace Components {
           * pintora api
          */
         "pintora": any;
+        /**
+          * Update source and refresh preview
+         */
         "refresh": () => Promise<void>;
         "showSource": boolean;
     }

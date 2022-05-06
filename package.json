@@ -1,7 +1,7 @@
 {
   "name": "pintora-stencil",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "pintora web components",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -12,11 +12,15 @@
   "unpkg": "dist/pintora-stencil/pintora-stencil.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/hikerpig/pintora-stencil.git"
   },
   "files": [
     "dist/",
     "loader/"
+  ],
+  "keywords": [
+    "pintora",
+    "stencil"
   ],
   "scripts": {
     "build": "stencil build --docs",

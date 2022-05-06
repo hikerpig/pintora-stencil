@@ -17,7 +17,7 @@
 
 ### `refresh() => Promise<void>`
 
-
+Update source and refresh preview
 
 #### Returns
 

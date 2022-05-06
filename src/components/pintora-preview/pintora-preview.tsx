@@ -25,6 +25,9 @@ export class PintoraPreview {
     this.updatePreview();
   }
 
+  /**
+   * Update source and refresh preview
+   */
   @Method()
   async refresh() {
     this.source = this.getSourceByElement();
