@@ -1,6 +1,7 @@
 # Pintora Web Components
 
-![](https://img.shields.io/npm/v/pintora-stencil?color=ff8150&label=pintora-stencil)
+[![](https://img.shields.io/npm/v/pintora-stencil?color=ff8150&label=pintora-stencil)](https://www.npmjs.com/package/pintora-stencil)
+
 
 This is a project for building a standalone Web Component using Stencil.
 
@@ -18,26 +19,25 @@ To start building a new web component using Stencil, clone this repo to a new di
 ```bash
 git clone https://github.com/hikerpig/pintora-stencil.git pintora-stencil
 cd pintora-stencil
-git remote rm origin
 ```
 
 and run:
 
 ```bash
-npm install
-npm start
+pnpm install
+pnpm start
 ```
 
 To build the component for production, run:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 To run the unit tests for the components, run:
 
 ```bash
-npm test
+pnpm test
 ```
 
 Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
@@ -45,8 +45,6 @@ Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-compone
 ## Using this component
 
 There are three strategies we recommend for using web components built with Stencil.
-
-The first step for all three of these strategies is to [publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages).
 
 ### Script tag
 
