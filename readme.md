@@ -7,6 +7,7 @@ This is a project for building a standalone Web Component using Stencil.
 Available components and their instructions:
 
 - [pintora-preview](https://github.com/hikerpig/pintora-stencil/tree/main/src/components/pintora-preview)
+  - A [quick demo on codepen](https://codepen.io/hikerpig/pen/xxYwXWM)
 
 Stencil generates 100% standards-based Web Components that run in any browser supporting the Custom Elements v1 spec. They work in any major framework or with no framework at all.
 

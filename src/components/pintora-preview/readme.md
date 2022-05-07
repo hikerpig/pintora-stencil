@@ -11,7 +11,7 @@ This component will not load pintora lib by itself, you should either:
 
 ### Example 1
 
-See the [live demo on codepen](https://codepen.io/hikerpig/pen/xxYwXWM?editors=1100).
+See the [live demo on codepen](https://codepen.io/hikerpig/pen/xxYwXWM).
 
 ```html
 <!-- inject pintora to global -->
@@ -36,7 +36,12 @@ See the [live demo on codepen](https://codepen.io/hikerpig/pen/xxYwXWM?editors=1
 
 ### Example 2
 
+See the [live demo on codepen](https://codepen.io/hikerpig/pen/oNEbxwJ).
+
 ```html
+<!-- import pintora web components -->
+<script type="module" src="https://unpkg.com/pintora-stencil/dist/pintora-stencil/pintora-stencil.esm.js"></script>
+
 <script type="module">
   import pintoraStandalone from 'https://cdn.skypack.dev/@pintora/standalone';
   document.querySelectorAll('pintora-preview').forEach((ele) => {
