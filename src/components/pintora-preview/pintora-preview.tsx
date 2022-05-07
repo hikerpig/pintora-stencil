@@ -24,8 +24,9 @@ export class PintoraPreview {
 
   @State() source: string;
 
-  resultElement!: HTMLDivElement;
-  sourceElement!: HTMLDivElement;
+  private resultElement!: HTMLDivElement;
+  private sourceElement!: HTMLDivElement;
+
 
   /**
    * Update source and refresh preview
@@ -44,6 +45,11 @@ export class PintoraPreview {
     if (this.source) {
       this.updatePreview();
     }
+  }
+
+  @Watch('pintora')
+  onPintorChange() {
+    this.refresh();
   }
 
   @Watch('source')
