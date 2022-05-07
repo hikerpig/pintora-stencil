@@ -25,6 +25,11 @@ export class PintoraPreview {
     this.updatePreview();
   }
 
+  @Watch('pintora')
+  onPintorChange() {
+    this.refresh();
+  }
+
   /**
    * Update source and refresh preview
    */
