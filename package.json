@@ -1,6 +1,6 @@
 {
   "name": "pintora-stencil",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "pintora web components",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
