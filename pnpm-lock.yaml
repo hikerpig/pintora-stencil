@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@pintora/standalone': ^0.4.4
+  '@pintora/standalone': ^0.5.0
   '@stencil/core': ^2.13.0
   '@types/jest': ^27.0.3
   jest: ^27.4.5
@@ -12,7 +12,7 @@ dependencies:
   '@stencil/core': 2.15.1
 
 devDependencies:
-  '@pintora/standalone': 0.4.4
+  '@pintora/standalone': 0.5.0
   '@types/jest': 27.5.0
   jest: 27.5.1
   jest-cli: 27.5.1
@@ -683,20 +683,20 @@ packages:
       tinycolor2: 1.4.2
     dev: true
 
-  /@pintora/dagre/0.10.7:
-    resolution: {integrity: sha512-8ybSOnpBd5+sPPa/xDdgQ1CooJF28eqroQaevPlTcnRqeM5BJIj1etLgsKuWweR8VEj0CGUvruwqv+AfIcvxWQ==}
+  /@pintora/dagre/0.10.9:
+    resolution: {integrity: sha512-5Nf43hGp0nI6vwbPd/UCzW0BXJ5+8RSh34YxvA0xr6V3ZcgolhpHzDRhUfXePEYC6NFl7J143i7Lmydnsd7XTg==}
     dependencies:
       '@pintora/graphlib': 2.2.2
       lodash-es: 4.17.21
     dev: true
 
-  /@pintora/diagrams/0.4.5:
-    resolution: {integrity: sha512-lSn74ZCy5Ua2TZGS2aRmZoJv8wITOzlsjYAQJFOOV9Du1mCRb3BKqhWu55UNefsLmR+wRDlqqGJVwnFh0085GQ==}
+  /@pintora/diagrams/0.5.0:
+    resolution: {integrity: sha512-i4MyPXs0w64n+6AGkIW6MgT2Me3Vuay5ZFeDSiZiqGjQdbVNLXyHY9q8ZGgUoWNZHCHnvX1rpwiYwLtGRtf77A==}
     dependencies:
       '@hikerpig/moo': 0.5.2-beta.2
       '@hikerpig/nearley': 2.21.0-beta.2
       '@pintora/core': 0.4.1
-      '@pintora/dagre': 0.10.7
+      '@pintora/dagre': 0.10.9
       '@pintora/graphlib': 2.2.2
       d3-interpolate: 3.0.1
       d3-scale: 4.0.2
@@ -722,11 +722,11 @@ packages:
       '@types/node': 14.18.16
     dev: true
 
-  /@pintora/standalone/0.4.4:
-    resolution: {integrity: sha512-cqqv6A5CI/0k4T4tC12wOXaIkfLEsUYycBHtEBMMT+IGSVLYtVGBv+gber/i8yijqume8zoqhXYDchvthyiRoQ==}
+  /@pintora/standalone/0.5.0:
+    resolution: {integrity: sha512-wsr8sA1BrW50Qb52AYJ02Ds+w8Q1gGZjCQv6/bNCLQbeki0gVkVaYsNwOhychZ3NEhhoNSfv/Z3BUqrIg6KLGQ==}
     dependencies:
       '@pintora/core': 0.4.1
-      '@pintora/diagrams': 0.4.5
+      '@pintora/diagrams': 0.5.0
       '@pintora/renderer': 0.4.2
     dev: true
 
@@ -2687,7 +2687,7 @@ packages:
     dev: true
 
   /randexp/0.4.6:
-    resolution: {integrity: sha512-80WNmd9DA0tmZrw9qQa62GPPWfuXJknrmVmLcxvq4uZBdYqb1wYoKTmnlGUchvVWe0XiLupYkBoXVOxz3C8DYQ==}
+    resolution: {integrity: sha1-6YatXl4x2uE93W97MBmqfIf2DKM=}
     engines: {node: '>=0.12'}
     dependencies:
       discontinuous-range: 1.0.0

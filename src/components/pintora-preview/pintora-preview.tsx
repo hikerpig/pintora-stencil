@@ -71,8 +71,29 @@ export class PintoraPreview {
     // console.log('pintora is', pintora)
     if (pintora && this.resultElement) {
       this.resultElement.innerHTML = '';
+      let config = null
+      let renderer = pintora.configApi.getConfig().core?.defaultRenderer || 'svg'
+      try {
+        if (pintora.getConfigFromElement) {
+          const configFromEle = pintora.getConfigFromElement(this.el)
+          if (configFromEle.theme) {
+            config = {
+              themeConfig: {
+                theme: configFromEle.theme,
+              },
+            }
+          }
+          if (configFromEle.renderer) {
+            renderer = configFromEle.renderer
+          }
+        }
+      } catch (error) {
+        console.warn('[pintora-preview] error', error)
+      }
       pintora.renderTo(this.source, {
         container: this.resultElement,
+        renderer,
+        config,
       });
     }
   }
