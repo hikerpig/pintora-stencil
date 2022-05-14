@@ -1,4 +1,7 @@
 import { Component, Prop, h, Method, Element, State, Watch } from '@stencil/core';
+// import type pintora from '@pintora/standalone'
+
+// export type PintoraAPIType = Pick<typeof pintora, 'renderContentOf'>;
 
 /**
  * @pintora/stadalone type
@@ -26,7 +29,6 @@ export class PintoraPreview {
 
   private resultElement!: HTMLDivElement;
   private sourceElement!: HTMLDivElement;
-
 
   /**
    * Update source and refresh preview
@@ -71,30 +73,18 @@ export class PintoraPreview {
     // console.log('pintora is', pintora)
     if (pintora && this.resultElement) {
       this.resultElement.innerHTML = '';
-      let config = null
-      let renderer = pintora.configApi.getConfig().core?.defaultRenderer || 'svg'
+
+      const source = this.source
       try {
-        if (pintora.getConfigFromElement) {
-          const configFromEle = pintora.getConfigFromElement(this.el)
-          if (configFromEle.theme) {
-            config = {
-              themeConfig: {
-                theme: configFromEle.theme,
-              },
-            }
-          }
-          if (configFromEle.renderer) {
-            renderer = configFromEle.renderer
-          }
-        }
+        pintora.renderContentOf(this.el as HTMLDivElement, {
+          resultContainer: this.resultElement,
+          getContent() {
+            return source
+          },
+        });
       } catch (error) {
-        console.warn('[pintora-preview] error', error)
+        console.warn('[pintora-preview] error', error);
       }
-      pintora.renderTo(this.source, {
-        container: this.resultElement,
-        renderer,
-        config,
-      });
     }
   }
 
