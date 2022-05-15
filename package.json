@@ -1,6 +1,6 @@
 {
   "name": "pintora-stencil",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "pintora web components",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -33,7 +33,7 @@
     "@stencil/core": "^2.13.0"
   },
   "devDependencies": {
-    "@pintora/standalone": "^0.5.0",
+    "@pintora/standalone": "^0.5.1",
     "@types/jest": "^27.0.3",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",

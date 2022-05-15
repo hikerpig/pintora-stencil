@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@pintora/standalone': ^0.5.0
+  '@pintora/standalone': ^0.5.1
   '@stencil/core': ^2.13.0
   '@types/jest': ^27.0.3
   jest: ^27.4.5
@@ -12,7 +12,7 @@ dependencies:
   '@stencil/core': 2.15.1
 
 devDependencies:
-  '@pintora/standalone': 0.5.0
+  '@pintora/standalone': 0.5.1
   '@types/jest': 27.5.0
   jest: 27.5.1
   jest-cli: 27.5.1
@@ -690,8 +690,8 @@ packages:
       lodash-es: 4.17.21
     dev: true
 
-  /@pintora/diagrams/0.5.0:
-    resolution: {integrity: sha512-i4MyPXs0w64n+6AGkIW6MgT2Me3Vuay5ZFeDSiZiqGjQdbVNLXyHY9q8ZGgUoWNZHCHnvX1rpwiYwLtGRtf77A==}
+  /@pintora/diagrams/0.5.1:
+    resolution: {integrity: sha512-63JpsOAiJIbDVGIu3cVW4cxH5PndoXOlqJAIZphVPmptSgtsG40UGHC3BxxHHqKa2UGo15YaXrA2RNEehZiQEg==}
     dependencies:
       '@hikerpig/moo': 0.5.2-beta.2
       '@hikerpig/nearley': 2.21.0-beta.2
@@ -722,11 +722,11 @@ packages:
       '@types/node': 14.18.16
     dev: true
 
-  /@pintora/standalone/0.5.0:
-    resolution: {integrity: sha512-wsr8sA1BrW50Qb52AYJ02Ds+w8Q1gGZjCQv6/bNCLQbeki0gVkVaYsNwOhychZ3NEhhoNSfv/Z3BUqrIg6KLGQ==}
+  /@pintora/standalone/0.5.1:
+    resolution: {integrity: sha512-bmfnb7mucXrexXokPQ5mJSUzJZ2vW8yXftZ0kzDBlfT2njd2yDVodm7c69o+m/3OBHqoTuEMXSeorfpvcvAPKw==}
     dependencies:
       '@pintora/core': 0.4.1
-      '@pintora/diagrams': 0.5.0
+      '@pintora/diagrams': 0.5.1
       '@pintora/renderer': 0.4.2
     dev: true
 
@@ -2687,7 +2687,7 @@ packages:
     dev: true
 
   /randexp/0.4.6:
-    resolution: {integrity: sha1-6YatXl4x2uE93W97MBmqfIf2DKM=}
+    resolution: {integrity: sha512-80WNmd9DA0tmZrw9qQa62GPPWfuXJknrmVmLcxvq4uZBdYqb1wYoKTmnlGUchvVWe0XiLupYkBoXVOxz3C8DYQ==}
     engines: {node: '>=0.12'}
     dependencies:
       discontinuous-range: 1.0.0
